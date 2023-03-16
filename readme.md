@@ -8,7 +8,7 @@ Para usar a biblioteca, você precisará ter o Composer instalado em seu sistema
 1.  Adicione a biblioteca à sua lista de dependências usando o Composer:
 
 ```
-composer require dowingows/calculator
+composer require dowingows/stack-calculator
 ```
 
 2. Crie um arquivo PHP em seu projeto e importe a classe StackCalculator:
