@@ -1,5 +1,7 @@
 # Stack Calculator
 
+A Stack Calculator é uma biblioteca PHP que permite a criação de uma calculadora em pilha simples. O conceito de pilha é utilizado para realizar cálculos matemáticos básicos.
+
 ## Como usar
 Para usar a biblioteca, você precisará ter o Composer instalado em seu sistema. Em seguida, siga as seguintes etapas:
 
