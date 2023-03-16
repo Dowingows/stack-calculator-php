@@ -1,2 +1,3 @@
 debug.php
 vendor/*
+.phpunit.cache
