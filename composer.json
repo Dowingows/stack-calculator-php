@@ -1,0 +1,19 @@
+{
+    "name": "dowingows/calculator",
+    "description": "This is a test component that will perform the four basic operations of mathematics: Addition, subtraction, multiplication, and division.",
+    "type": "library",
+    "keywords": ["calculator"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dowingows\\Calculator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Domingos"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
