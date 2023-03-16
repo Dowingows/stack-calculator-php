@@ -1,5 +1,5 @@
 {
-    "name": "dowingows/calculator",
+    "name": "dowingows/stack-calculator",
     "description": "This is a test component that will perform the four basic operations of mathematics: Addition, subtraction, multiplication, and division.",
     "type": "library",
     "keywords": ["calculator"],
