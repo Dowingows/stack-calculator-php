@@ -10,7 +10,10 @@ use Dowingows\Calculator\Exception\MissingOperatorException;
 
 class StackCalculator
 {
-    private $stack;
+    /**
+     * @var array<int, float>
+     */
+    private array $stack;
 
     public function __construct()
     {
@@ -28,7 +31,8 @@ class StackCalculator
         return array_pop($this->stack);
     }
 
-    public function getOperands(): array 
+    /** @return array<int, float>  */
+    public function getOperands(): array
     {
         $operand1 = $this->pop();
         $operand2 = $this->pop();
@@ -37,8 +41,7 @@ class StackCalculator
             return [];
         }
 
-        if ($operand2 === null)
-        {
+        if ($operand2 === null) {
             return [$operand1];
         }
 
@@ -49,12 +52,11 @@ class StackCalculator
     {
         $operands = $this->getOperands();
 
-        if (count($operands) < 2)
-        {
+        if (count($operands) < 2) {
             return throw new MissingOperatorException;
         }
 
-        [$operand1, $operand2]= $operands;
+        [$operand1, $operand2] = $operands;
 
         $result = $operand1 + $operand2;
         $this->push($result);
@@ -97,7 +99,7 @@ class StackCalculator
         return $this;
     }
 
-    public function getResult(): float
+    public function getResult(): ?float
     {
         return $this->pop();
     }
