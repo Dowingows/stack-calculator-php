@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Dowingows\Calculator;
 
-
 use Dowingows\Calculator\Exception\DivisionByZeroException;
 use Dowingows\Calculator\Exception\MissingOperatorException;
 
@@ -53,7 +52,7 @@ class StackCalculator
         $operands = $this->getOperands();
 
         if (count($operands) < 2) {
-            return throw new MissingOperatorException;
+            return throw new MissingOperatorException();
         }
 
         [$operand1, $operand2] = $operands;
@@ -90,7 +89,7 @@ class StackCalculator
         $operand2 = $this->pop();
 
         if ($operand1 == 0) {
-            throw new DivisionByZeroException;
+            throw new DivisionByZeroException();
         }
 
         $result = $operand2 / $operand1;
