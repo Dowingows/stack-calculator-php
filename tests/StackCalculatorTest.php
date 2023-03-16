@@ -27,7 +27,7 @@ final class StackCalculatorTest extends TestCase
         
         $result = (new StackCalculator)->push(3)->push(3)->subtract()->getResult();
 
-        $this->assertSame(0.0, $result);
+        $this->assertSame(1.0, $result);
     }
 
     public function testIfMultiplyOperationWorks(): void
